@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding:0;
+overflow-x: hidden;
+}
+
+
+
+.c-name{
+
+    height: 100px;
+    width: 100px;
+}
+
+.menu-items{
+    padding-top: 33px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.proposal-div{
+    background-color: black;
+    width: 100px;
+    height: 35px;
+    padding-top: 6px;
+}
+
+.proposal{
+    margin-left: 15px;
+    color: whitesmoke;
+}
+
+
+.proposal-div:hover{
+    background-color: rgb(85, 89, 89);
+
+}
+
+.c-title{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.bbb{
+    display: flex;
+    justify-content: space-around;
+}
+.main-text{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.cc-1{
+    padding-top: 180px;
+
+ }
+
+ .cc-2{
+    padding-top: 80px;
+    padding-left: 120px;
+}
+
+
+.proposal-btn .btn-dark{
+
+    width: 250px;
+    height: 50px;
+    align-items: center;
+   
+}
+
+.company{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 80px;
+}
+
+.company-logos{
+
+    margin-top: 50px;
+}
+
+.c-3{
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+
+}
+
+.c-3-txt-1{
+
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin-right: 20px;
+}
+
+.c-3-txt-2{
+
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin-right: 20px;
+}
+
+.c-3-div{
+
+    margin-top: 30px;
+
+}
+
+.c-4{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+
+    justify-content:center;
+}
+
+.c-5{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+
+    justify-content:center;
+
+}
+
+.c-5 p{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.hr-1{
+    width: 80%;
+}
+
+.c-6{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    margin-bottom: 100px;
+}
+
+.c-6-p1{
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.c-6-p2{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.c-6-p3{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.c-6-p4{
+    font-size: 18px;
+    font-weight: 700;
+}
+.c-6-p4 i{
+    margin-left: 10px;
+}
+
+
+  @property --num1 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num2 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num3 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num4 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num5 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  /* .counter1,.counter2,.counter3,.counter4,.counter5 {
+   
+    transition: --num1 0.5s;
+    transition: --num2 0.5s;
+    transition: --num3 0.5s;
+    transition: --num4 0.5s;
+    transition: --num5 0.5s;
+
+    counter-set: num1 var(--num1);
+    counter-set: num2 var(--num2);
+    counter-set: num3 var(--num3);
+    counter-set: num4 var(--num4);
+    counter-set: num5 var(--num5);
+    font: 800 40px system-ui;
+  }
+  .counter1::after,.counter2::after,.counter3::after,.counter4::after,.counter5::after {
+    
+    content: counter(num1);
+    content: counter(num2);
+    content: counter(num3);
+    content: counter(num4);
+    content: counter(num5);
+  } */
+  .counter1 {
+   
+    transition: --num1 0.5s;
+    counter-set: num1 var(--num1);
+    font: 800 40px system-ui;
+  }
+
+  .counter1::after {
+    
+    content: counter(num1);
+  }
+
+  .counter2 {
+   
+    transition: --num2 0.5s;
+    counter-set: num2 var(--num2);
+    font: 800 40px system-ui;
+  }
+
+  .counter2::after {
+    
+    content: counter(num2);
+  }
+
+  .counter3 {
+   
+    transition: --num3 0.5s;
+    counter-set: num3 var(--num3);
+    font: 800 40px system-ui;
+  }
+
+  .counter3::after {
+    
+    content: counter(num3);
+  }
+
+
+  .counter4 {
+   
+    transition: --num4 0.5s;
+    counter-set: num4 var(--num4);
+    font: 800 40px system-ui;
+  }
+
+  .counter4::after {
+    
+    content: counter(num4);
+  }
+  .counter5 {
+   
+    transition: --num5 0.5s;
+    counter-set: num5 var(--num5);
+    font: 800 40px system-ui;
+  }
+
+  .counter5::after {
+    
+    content: counter(num5);
+  }
+
+
+
+
+  .counter:hover div{
+  
+    --num1: 100;
+    --num2: 254;
+    --num3: 80;
+    --num4: 50;
+    --num5: 2000;
+  }
+
+
+  
+  .counter span{
+      font-size: 25px;
+      padding-right: 40px;
+  }
+
+  .ddd{
+
+      padding-left: 150px;
+  }
+
+  .c-7{
+
+    margin-top:100px ;
+    margin-bottom:100px ;
+
+  }
+
+  .pp{
+      font-size: 40px;
+      padding-top: 100px;
+  }
+
+  .c8p{
+      font-size: 30px;
+      font-weight: 500;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .c9p{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.c9ph{
+    font-weight:500 ;
+    font-size: 20px;
+}
+.c9pp{
+    font-size: 15px;
+}
+
+c-10p{
+    margin-top: 5px;
+}
+
+.carousel-inner{
+    width:80%;
+    max-height: 500px !important;
+ }
+
+ .c-11{
+     margin-bottom: 100px;
+ }
+
+ .ourwork-p{
+     font-weight: 400;
+     font-size:30px ;
+     margin-bottom: 100px;
+ }
+
+
+ .c-12{
+    padding-left: 500px;
+
+}
+
+.devp{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footerctn{
+    background-color:#292b2b;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width:100%;
+    height: 40vh;
+}
+
+.footerctnp{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top:10px;
+}
+
+.footerctnbtn:hover{
+    background-color: black;
+
+}
+
+.footerctnbtn:hover span{
+    color: white;
+}
+
+.c12p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.items{
+    margin: 20px;
+}
+
+.items span{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.footer{
+    margin-bottom: 50px;
+}
+
+.social i{
+    margin: 5px;
+
+    
+}
+
+.ftpp{
+    font-weight:500 ;
+}
+
+
